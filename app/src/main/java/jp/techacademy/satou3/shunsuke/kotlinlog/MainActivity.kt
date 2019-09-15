@@ -10,20 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val dog = Dog("ポチ", 3)
+   val say = Human("shunsukesato",32, "スマホアプリ作成")
 
-       dog.say()
-        Log.d("kotlintest", "犬の名前は"+ dog.name + "です")
-        Log.d("kotlintest","犬の年齢は" + dog.age + "歳です。")
-
-
-        val bigdog =BigDog("ヨーゼフ", 15)
-
-        bigdog.say()
-        Log.d("kotlintest","犬の名前は" + bigdog.name + "です")
-        Log.d("kotlintest","犬の年齢は" + bigdog.age + "歳です。")
-
-
+        say.say()
+        say.think()
 
     }
 }
